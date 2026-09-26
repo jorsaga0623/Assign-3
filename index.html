@@ -55,42 +55,50 @@
     </section>
 
     <section id="portfolio" class="portfolio">
-
-        <div class="portfolio-card cosplay">
-            <div class="portfolio-overlay"></div>
+        <div class="portfolio-item">
 
             <div class="portfolio-text">
-                <h3>Cosplay</h3>
-                <p>Click to explore</p>
+                <h3>I. Cosplay</h3>
             </div>
-        </div>
 
-        <div class="portfolio-card chinese-culture">
-            <div class="portfolio-overlay"></div>
+            <div class="portfolio-card cosplay"></div>
+
+        </div>
+        <div class="portfolio-item">
 
             <div class="portfolio-text">
-                <h3>Chinese Culture</h3>
-                <p>Click to explore</p>
+                <h3>II. Chinese Culture</h3>
             </div>
+
+            <div class="portfolio-card chinese-culture"></div>
+
         </div>
 
-        <div class="portfolio-card portrait">
-            <div class="portfolio-overlay"></div>
+        <div class="portfolio-item">
 
             <div class="portfolio-text">
-                <h3>Portrait</h3>
-                <p>Click to explore</p>
+                <h3>III. Portrait</h3>
             </div>
+
+            <div class="portfolio-card portrait"></div>
+
         </div>
 
-        <div class="portfolio-card vintage">
-            <div class="portfolio-overlay"></div>
+        <div class="portfolio-item">
 
             <div class="portfolio-text">
-                <h3>Vintage</h3>
-                <p>Click to explore</p>
+                <h3>IV. Vintage</h3>
             </div>
+
+            <div class="portfolio-card vintage"></div>
+
         </div>
+
+    </section>
+
+    <section class="parallax-section">
+
+        <div class="parallax-image"></div>
 
     </section>
 
@@ -113,5 +121,20 @@
     </footer>
 
 </body>
+<script>
+    window.addEventListener("scroll", function () {
 
-</html>
+        const image = document.querySelector(".parallax-image");
+        const section = document.querySelector(".parallax-section");
+
+        const sectionTop = section.offsetTop;
+        const scrollPosition = window.scrollY;
+
+        const movement = (scrollPosition - sectionTop) * 0.15;
+
+        image.style.transform = `translateY(${movement}px)`;
+
+    });
+</script>
+
+</html>v
