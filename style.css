@@ -166,6 +166,16 @@ a {
   max-width: 420px;
 }
 
+.about-opening {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px !important;
+  line-height: 1.4 !important;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #222222 !important;
+  white-space: nowrap;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(4, 340px);
@@ -234,6 +244,146 @@ a {
   position: absolute;
   inset: 0;
   background: transparent;
+}
+
+/* =========================
+   Investment
+========================= */
+
+.investment {
+  padding: 130px 8%;
+  background: #E5E0D3;
+}
+
+
+/* Heading */
+
+.investment-heading {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 80px;
+}
+
+.investment-heading span {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #AAA88F;
+}
+
+.investment-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 58px;
+  font-weight: 400;
+  margin: 15px 0 20px;
+}
+
+.investment-heading p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* Pricing */
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Card */
+
+.pricing-card {
+  padding: 45px 35px;
+  border-top: 1px solid #AAA88F;
+  border-bottom: 1px solid #AAA88F;
+}
+
+
+/* Title */
+
+.pricing-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 35px;
+  min-height: 75px;
+}
+
+.pricing-title h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.pricing-subtitle {
+  height: 17px;
+  margin-top: 5px;
+}
+
+.creative-subtitle {
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #AAA88F;
+}
+
+/* Price */
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(170, 168, 143, 0.4);
+
+  font-size: 16px;
+}
+
+.price-row span:last-child {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+}
+
+
+/* Included */
+
+.pricing-card ul {
+  margin: 30px 0 35px;
+  padding-left: 18px;
+
+  line-height: 2;
+
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Button */
+
+.inquire-button {
+  display: inline-block;
+
+  padding: 12px 30px;
+
+  border: 1px solid #AAA88F;
+
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.inquire-button:hover {
+  background: #AAA88F;
+  color: #F4F0E8;
 }
 
 /* Parallax Image */
