@@ -48,16 +48,18 @@
 
         <div class="introduction">
             <h2>About Me</h2>
+
+            <p class="about-opening">
+                Some moments are impossible to recreate.
+            </p>
+
             <p>
-                Short introduction about Jorsaga
-                and her photography.
+                I’m drawn to the space between a story and a frame —
+                where a character exists, a world unfolds,
+                and a fleeting moment quietly becomes a memory.
             </p>
         </div>
 
-    </section>
-
-    <section id="investment">
-        ...
     </section>
 
     <section id="experiment">
@@ -114,6 +116,120 @@
 
     </section>
 
+    <section id="investment" class="investment">
+
+        <div class="investment-heading">
+            <span>INVESTMENT</span>
+            <h2>Photography Services</h2>
+            <p>
+                Every session is thoughtfully created to capture
+                your story, personality, and vision.
+            </p>
+        </div>
+
+        <div class="pricing-container">
+
+            <!-- Portrait -->
+            <div class="pricing-card">
+
+                <div class="pricing-title">
+                    <span>I.</span>
+
+                    <div>
+                        <h3>Portrait</h3>
+                        <p class="pricing-subtitle">&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="price-row">
+                    <span>1 Hour</span>
+                    <span>$350</span>
+                </div>
+
+                <div class="price-row">
+                    <span>2 Hours</span>
+                    <span>$550</span>
+                </div>
+
+                <ul>
+                    <li>Location guidance</li>
+                    <li>Styling consultation</li>
+                    <li>40+ edited images</li>
+                    <li>Online gallery</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Dual -->
+            <div class="pricing-card">
+
+                <div class="pricing-title">
+                    <span>II.</span>
+
+                    <div>
+                        <h3>Dual</h3>
+                        <p class="creative-subtitle">Friends · Siblings · Couples</p>
+                    </div>
+                </div>
+
+                <div class="price-row">
+                    <span>1 Hour</span>
+                    <span>$400</span>
+                </div>
+
+                <div class="price-row">
+                    <span>2 Hours</span>
+                    <span>$650</span>
+                </div>
+
+                <ul>
+                    <li>Location guidance</li>
+                    <li>Styling consultation</li>
+                    <li>50+ edited images</li>
+                    <li>Online gallery</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Creative -->
+            <div class="pricing-card">
+
+                <div class="pricing-title">
+                    <span>III.</span>
+
+                    <div>
+                        <h3>Creative</h3>
+                        <p class="creative-subtitle">
+                            Cosplay · Chinese Culture · Vintage
+                        </p>
+                    </div>
+                </div>
+
+                <div class="price-row">
+                    <span>1 Hour</span>
+                    <span>$400</span>
+                </div>
+
+                <div class="price-row">
+                    <span>2 Hours</span>
+                    <span>$650</span>
+                </div>
+
+                <ul>
+                    <li>Concept development</li>
+                    <li>Location guidance</li>
+                    <li>Styling consultation</li>
+                    <li>50+ edited images</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <section class="parallax-section">
 
         <div class="parallax-image"></div>
@@ -136,23 +252,23 @@
 
         </div>
 
-</footer>
+    </footer>
 
-<script>
-    window.addEventListener("scroll", function () {
+    <script>
+        window.addEventListener("scroll", function () {
 
-        const image = document.querySelector(".parallax-image");
-        const section = document.querySelector(".parallax-section");
+            const image = document.querySelector(".parallax-image");
+            const section = document.querySelector(".parallax-section");
 
-        const sectionTop = section.offsetTop;
-        const scrollPosition = window.scrollY;
+            const sectionTop = section.offsetTop;
+            const scrollPosition = window.scrollY;
 
-        const movement = (scrollPosition - sectionTop) * 0.15;
+            const movement = (scrollPosition - sectionTop) * 0.15;
 
-        image.style.transform = `translateY(${movement}px)`;
+            image.style.transform = `translateY(${movement}px)`;
 
-    });
-</script>
+        });
+    </script>
 
 </body>
 
